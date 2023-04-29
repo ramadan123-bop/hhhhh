@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+}
+.logo{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+.navigation a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: #818181;;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(imags/backgraund.jpeg.jpg) no-repeat;
+    background-size: cover;
+    
+    background-attachment: fixed;
+}
+.main h2{
+    color: black;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    color: #ffffff;
+    font-size: 3em;
+    font-weight: 600;
+}
+.main-btn{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color:rgba(199, 195, 191, 0.651) ;
+    transform: scale(1.1);
+}
+.social-icons a{
+    color: #ffffff;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #ffffff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 40px;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+.icon{
+    color: rgb(0, 0, 0);
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: black;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.our-customars h2{
+    color: #ffffff;
+}
+.our-customars{
+    background-color: rgb(0, 0, 0);
+}
+.our-customars.content{
+    margin-top: 30px;
+}
+.card2{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    min-height: 14em;
+    width: 28em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin:0px 200px;
+    transition: 0.7s ease; 
+}
+.card2:hover{
+    transform: scale(1.1);
+}
+.customars-image .img{
+    width: 100%;
+}
+.customars-info{
+    padding: 1em;
+}
+.customars-name{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.customars-name a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+.customars-name a:hover{
+    color: #818181;
+}
+.info a{
+    text-decoration: none;
+    color: black;
+    transform: 1;
+    transition: 0.3s;
+
+}
+.info a:hover{
+    color: #818181;
+}
+.footer{
+    background-color: black;
+    color: #ffffff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer p{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    .section{
+        padding: 80px 20px;
+    }
+    .main-content h2{
+        font-size: 1em;
+    }
+    .main-content h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction:row;
+        align-items: center;
+    }
+   
+    .card2{
+        margin: 0px -70px;
+    }
+    
+}
+@media (max-width:614px){
+    body{
+        font-size: 7px;
+    }
+    .main-content{
+        font-size: 0.8em;
+    }
+    .main-content h3{
+        font-size: 1em;
+    }
+    .card2{
+        margin: 0px -30px;
+    }
+    
+}
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+    .main{
+        background-size:contain ;
+    }
+   
+}
+
+
